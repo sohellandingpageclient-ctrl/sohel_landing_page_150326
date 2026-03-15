@@ -498,6 +498,12 @@
     }
     .ticker-item::before { content:'🔥 '; }
 
+    /* ─── HERO CONTENT ─── */
+    .hero-content {
+      display:flex; flex-direction:column;
+      align-items:center; gap:18px; width:100%;
+    }
+
     /* ─── DESKTOP ─── */
     @media (min-width:700px) {
       .hero-section {
@@ -515,17 +521,41 @@
       .expert-strip       { max-width:900px; }
     }
 
-    /* ─── SMALL PHONES ─── */
+    /* ─── MOBILE: compact layout so CTA is above fold ─── */
+    @media (max-width:699px) {
+      .page-wrapper       { padding: 8px 14px 66px; }
+      .come-header        { margin-bottom: 6px; }
+      .come-logo          { height: 36px; }
+      .expert-strip       { margin-bottom: 8px; padding: 7px 14px 7px 12px; }
+      .image-frame-outer  { max-width: 185px; }
+      .hero-section       { gap: 10px; }
+      .hero-content       { gap: 10px; }
+      .stat-item          { padding: 8px 4px 6px; }
+      .stat-num           { font-size: clamp(14px,4vw,18px); }
+      .headline           { font-size: clamp(17px,4.8vw,22px); line-height:1.6; }
+      .cta-btn            { padding: 14px 20px; font-size: clamp(13px,3.8vw,15px); }
+      .urgency-text       { font-size: 10px; margin-top: -4px; }
+    }
+
+    /* ─── SMALL PHONES (≤360px wide or ≤680px tall) ─── */
     @media (max-width:360px) {
-      .headline       { font-size:19px; }
-      .cta-btn        { padding:14px 18px; font-size:13px; }
+      .headline       { font-size:17px; }
+      .cta-btn        { padding:13px 16px; font-size:13px; }
       .cta-glow-ring  { max-width:280px; }
-      .expert-name    { font-size:14px; }
+      .expert-name    { font-size:13px; }
+      .image-frame-outer { max-width:165px; }
+    }
+    @media (max-width:699px) and (max-height:650px) {
+      .expert-strip   { display:none; }
+      .image-frame-outer { max-width:150px; }
+      .stats-row      { display:none; }
+      .headline       { font-size:16px; line-height:1.55; }
+      .page-wrapper   { padding-top: 6px; }
     }
 
     /* ─── LARGE PHONES (400–699) ─── */
     @media (min-width:400px) and (max-width:699px) {
-      .image-frame-outer { max-width:340px; }
+      .image-frame-outer { max-width:200px; }
     }
 
     /* ─── RIPPLE ─── */
@@ -585,7 +615,7 @@
       </div>
 
       <!-- ── TEXT + CTA ── -->
-      <div class="hero-content" style="display:flex;flex-direction:column;align-items:center;gap:18px;width:100%;">
+      <div class="hero-content">
 
         <!-- Stats -->
         <div class="stats-row">
