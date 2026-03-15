@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="facebook-domain-verification" content="ylul76wv15vu6qhm8ns33sz6xm7lnv" />
+  <title>IPL 2025 - आज की Best Team | Telegram Join करो</title>
+  <meta property="og:title" content="IPL 2025 - आज की 1st Rank Team पाओ">
+  <meta property="og:description" content="आज होने वाले मैच की 1st Rank Team Telegram पर मिलेगी। अभी Join करो!">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- META PIXEL -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','875692978767360');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=875692978767360&ev=PageView&noscript=1"/></noscript>
+
+  <style>
+    /* ─── RESET ─── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+
+    /* ─── CSS VARIABLES ─── */
+    :root {
+      --bg-deep:     #03060C;
+      --bg-mid:      #07101E;
+      --bg-panel:    #0C1828;
+      --gold-bright: #FFD700;
+      --gold-main:   #F5A623;
+      --gold-dim:    #C8860A;
+      --fire-orange: #FF6B00;
+      --fire-hot:    #FF3A00;
+      --blue-bright: #00B4FF;
+      --green-acc:   #00E676;
+      --white:       #FFFFFF;
+      --text-muted:  #8BA0C0;
+    }
+
+    /* ─── BODY — richer gold/fire background ─── */
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Noto Sans Devanagari','Poppins',sans-serif;
+      color: var(--white);
+      background-color: var(--bg-deep);
+      background-image:
+        radial-gradient(ellipse 100% 55% at 50% -8%, rgba(255,165,0,.22) 0%, transparent 58%),
+        radial-gradient(ellipse 60% 50% at 8% 88%,  rgba(255,80,0,.15)  0%, transparent 58%),
+        radial-gradient(ellipse 50% 40% at 92% 12%, rgba(0,160,255,.10)  0%, transparent 52%),
+        radial-gradient(ellipse 75% 65% at 50% 50%, transparent 20%, rgba(0,0,0,.72) 100%);
+    }
+
+    /* Dot-grid texture */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: radial-gradient(circle, rgba(255,200,0,.032) 1px, transparent 1px);
+      background-size: 26px 26px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ─── PARTICLE CANVAS ─── */
+    #particle-canvas { position:fixed; inset:0; z-index:1; pointer-events:none; }
+
+    /* ─── PAGE WRAPPER ─── */
+    .page-wrapper {
+      position:relative; z-index:2;
+      min-height:100vh;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:flex-start;
+      padding: 14px 16px 76px;
+      opacity:0;
+      animation: fadeInPage .8s ease-out .12s forwards;
+    }
+    @keyframes fadeInPage { to { opacity:1; } }
+
+    /* ─── KEYFRAMES ─── */
+    @keyframes slideDown { from{opacity:0;transform:translateY(-22px);}  to{opacity:1;transform:translateY(0);} }
+    @keyframes slideUp   { from{opacity:0;transform:translateY(34px);}   to{opacity:1;transform:translateY(0);} }
+    @keyframes fadeUp    { from{opacity:0;transform:translateY(18px);}   to{opacity:1;transform:translateY(0);} }
+    @keyframes blink     { 0%,100%{opacity:1;box-shadow:0 0 9px #f00,0 0 18px rgba(255,0,0,.4);} 50%{opacity:.1;box-shadow:none;} }
+    @keyframes urgencyFlash { 0%,100%{color:rgba(255,215,0,.55);} 50%{color:rgba(255,215,0,1);} }
+    @keyframes tickerSlide  { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+    @keyframes rippleOut    { to{transform:scale(4);opacity:0;} }
+    @keyframes floatUp      { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-4px);} }
+    @keyframes expertIn     { from{opacity:0;transform:translateY(-12px);} to{opacity:1;transform:translateY(0);} }
+
+    /* Rotating conic-gradient border */
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    @keyframes rotateBorder { to { --angle: 360deg; } }
+
+    /* Gold glow breath on frame */
+    @keyframes goldBreath {
+      0%,100% { box-shadow: 0 0 22px rgba(255,200,0,.5), 0 0 55px rgba(255,100,0,.2), 0 0 100px rgba(255,160,0,.07); }
+      50%      { box-shadow: 0 0 40px rgba(255,215,0,.95), 0 0 90px rgba(255,100,0,.38), 0 0 140px rgba(255,180,0,.14); }
+    }
+
+    /* Fire flicker on CTA border */
+    @keyframes fireFlicker {
+      0%   { box-shadow: 0 0 18px rgba(255,107,0,.65), 0 0 44px rgba(255,58,0,.2); }
+      33%  { box-shadow: 0 0 26px rgba(255,215,0,.85), 0 0 60px rgba(255,107,0,.35); }
+      66%  { box-shadow: 0 0 20px rgba(255,58,0,.8),   0 0 50px rgba(255,215,0,.28); }
+      100% { box-shadow: 0 0 18px rgba(255,107,0,.65), 0 0 44px rgba(255,58,0,.2); }
+    }
+
+    @keyframes shimmerGold {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+    @keyframes pulseRing {
+      0%  { box-shadow: 0 0 0 0   rgba(255,180,0,.7); }
+      70% { box-shadow: 0 0 0 16px rgba(255,180,0,0); }
+      100%{ box-shadow: 0 0 0 0   rgba(255,180,0,0); }
+    }
+    @keyframes statGlow {
+      0%  { text-shadow: none; }
+      50% { text-shadow: 0 0 16px rgba(0,230,118,.95), 0 0 32px rgba(0,230,118,.4); }
+      100%{ text-shadow: 0 0 8px  rgba(0,230,118,.55), 0 0 18px rgba(0,230,118,.2); }
+    }
+
+    /* ─── HEADER ─── */
+    .come-header {
+      width:100%; max-width:400px;
+      display:flex; align-items:center; justify-content:space-between;
+      margin-bottom: 12px;
+      opacity:0;
+      animation: slideDown .6s ease-out .18s forwards;
+    }
+    .come-logo {
+      height:44px; width:auto;
+      filter: drop-shadow(0 0 16px rgba(255,200,0,.5)) drop-shadow(0 2px 8px rgba(0,0,0,.7));
+    }
+
+    /* ─── LIVE BADGE ─── */
+    .live-badge {
+      display:inline-flex; align-items:center; gap:8px;
+      background: linear-gradient(135deg, rgba(255,100,0,.2), rgba(255,50,0,.1));
+      border: 1.5px solid rgba(255,160,0,.55);
+      border-radius:30px;
+      padding: 7px 20px;
+      font-family:'Poppins',sans-serif;
+      font-size:11px; font-weight:700; letter-spacing:3px;
+      color:#FFBB00;
+      text-transform:uppercase;
+      box-shadow: 0 0 22px rgba(255,120,0,.22), inset 0 1px 0 rgba(255,255,255,.08);
+      backdrop-filter:blur(8px);
+    }
+    .live-dot {
+      width:9px; height:9px;
+      background:#FF2020; border-radius:50%; flex-shrink:0;
+      animation: blink 1.1s ease-in-out infinite;
+    }
+
+    /* ─── EXPERT STRIP — premium card style ─── */
+    .expert-strip {
+      display:flex; align-items:center; gap:12px;
+      background: linear-gradient(135deg, rgba(25,16,0,.75), rgba(18,10,0,.85));
+      border: 1px solid rgba(255,215,0,.22);
+      border-left: 3px solid rgba(255,215,0,.7);
+      border-radius: 14px;
+      padding: 10px 18px 10px 16px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 24px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,215,0,.07);
+      opacity:0;
+      animation: expertIn .6s ease-out .38s forwards;
+    }
+    .expert-name {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(15px,4.2vw,18px);
+      font-weight:800; letter-spacing:.4px;
+      color: var(--gold-bright);
+      text-shadow: 0 0 14px rgba(255,215,0,.75), 0 0 30px rgba(255,140,0,.35);
+    }
+    .expert-badge {
+      font-family:'Poppins',sans-serif;
+      font-size:10.5px; font-weight:700;
+      letter-spacing:1.5px;
+      color: var(--bg-deep);
+      background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold-main) 55%, var(--fire-orange) 100%);
+      border-radius:20px;
+      padding: 4px 13px;
+      text-transform:uppercase;
+      box-shadow: 0 2px 14px rgba(255,190,0,.55);
+      white-space:nowrap;
+    }
+
+    /* ─── HERO SECTION ─── */
+    .hero-section {
+      display:flex; flex-direction:column;
+      align-items:center; gap:18px;
+      width:100%; max-width:500px;
+    }
+
+    /* ─── IMAGE CARD — full width with overlay ─── */
+    .image-frame-outer {
+      position:relative;
+      width:100%; max-width:290px;
+      opacity:0;
+      animation: slideUp .9s ease-out .32s forwards;
+    }
+
+    /* Rotating conic-gradient border ring */
+    .image-frame-ring {
+      padding: 3px;
+      border-radius: 22px;
+      background: conic-gradient(from var(--angle),
+        #FFD700 0%, #FF8C00 18%, #FF3A00 32%,
+        #F5A623 48%, #FFD700 62%, #FF8C00 78%,
+        #FF3A00 90%, #FFD700 100%);
+      animation: rotateBorder 5s linear infinite, goldBreath 4s ease-in-out infinite;
+    }
+
+    .image-frame-inner {
+      position:relative;
+      border-radius: 20px;
+      overflow:hidden;
+      background:#050A14;
+    }
+
+    .image-frame-inner img {
+      width:100%; height:auto;
+      display:block;
+      border-radius: 20px;
+    }
+
+    /* Name overlay inside image */
+    .img-name-overlay {
+      position:absolute;
+      bottom:0; left:0; right:0;
+      padding: 55px 14px 14px;
+      background: linear-gradient(to top,
+        rgba(3,6,12,1) 0%,
+        rgba(3,6,12,.7) 45%,
+        transparent 100%);
+      border-radius: 0 0 20px 20px;
+    }
+    .img-name-overlay .iname {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(14px,3.8vw,16px);
+      font-weight:800; letter-spacing:.3px;
+      color: var(--gold-bright);
+      text-shadow: 0 0 10px rgba(255,215,0,.9), 0 0 22px rgba(255,140,0,.4);
+    }
+    .img-name-overlay .ititle {
+      font-family:'Poppins',sans-serif;
+      font-size: 9.5px; font-weight:600;
+      letter-spacing:2px;
+      color: rgba(255,190,60,.6);
+      text-transform:uppercase;
+      margin-top:2px;
+    }
+
+    /* Verified badge floating */
+    .verified-badge {
+      position:absolute;
+      top:12px; right:12px;
+      z-index:4;
+      font-family:'Poppins',sans-serif;
+      font-size:9.5px; font-weight:800;
+      letter-spacing:1.2px;
+      color: var(--bg-deep);
+      background: linear-gradient(135deg, var(--gold-bright), var(--gold-main));
+      border-radius:20px;
+      padding: 5px 12px;
+      white-space:nowrap;
+      text-transform:uppercase;
+      box-shadow: 0 3px 16px rgba(255,215,0,.65), inset 0 1px 0 rgba(255,255,255,.3);
+      animation: floatUp 3s ease-in-out infinite;
+    }
+
+    /* Corner accent dots */
+    .image-frame-outer::before,
+    .image-frame-outer::after {
+      content:'';
+      position:absolute;
+      width:14px; height:14px;
+      border-radius:50%; z-index:3;
+    }
+    .image-frame-outer::before {
+      top:-5px; left:-5px;
+      background: var(--gold-bright);
+      box-shadow: 0 0 16px var(--gold-bright), 0 0 32px rgba(255,215,0,.5);
+    }
+    .image-frame-outer::after {
+      bottom:-5px; right:-5px;
+      background: var(--fire-orange);
+      box-shadow: 0 0 16px var(--fire-orange), 0 0 32px rgba(255,107,0,.5);
+    }
+
+    /* Fallback */
+    .img-fallback {
+      width:100%; height:240px;
+      display:none; align-items:center; justify-content:center;
+      font-size:80px;
+      filter: drop-shadow(0 0 20px rgba(255,200,0,.4));
+    }
+
+    /* ─── STATS ROW ─── */
+    .stats-row {
+      display:flex; align-items:stretch; justify-content:center;
+      gap:7px; width:100%;
+      opacity:0;
+      animation: slideUp .9s ease-out .58s forwards;
+    }
+    .stat-item {
+      flex:1;
+      display:flex; flex-direction:column; align-items:center;
+      background: linear-gradient(160deg, rgba(22,14,0,.88), rgba(12,8,0,.92));
+      border: 1px solid rgba(255,215,0,.18);
+      border-top: 2px solid rgba(255,215,0,.55);
+      border-radius: 13px;
+      padding: 12px 6px 10px;
+      box-shadow: 0 5px 24px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,215,0,.06);
+      position:relative;
+      overflow:hidden;
+    }
+    /* Subtle inner glow top */
+    .stat-item::before {
+      content:'';
+      position:absolute;
+      top:0; left:15%; right:15%; height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,215,0,.6), transparent);
+    }
+    .stat-num {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(17px,4.8vw,23px);
+      font-weight:900;
+      color: var(--green-acc);
+      line-height:1;
+      text-shadow: 0 0 12px rgba(0,230,118,.5);
+    }
+    .stat-num.counted { animation: statGlow 1s ease-out forwards; }
+    .stat-label {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(7.5px,2vw,9.5px);
+      font-weight:600; letter-spacing:.9px;
+      color: rgba(180,160,80,.75);
+      text-transform:uppercase;
+      margin-top:4px;
+    }
+
+    /* ─── HEADLINE ─── */
+    .headline {
+      font-family:'Noto Sans Devanagari',sans-serif;
+      font-size: clamp(21px,5.8vw,30px);
+      font-weight:700;
+      line-height:1.72;
+      text-align:center;
+      color: #F2F5FF;
+      opacity:0;
+      animation: slideUp .9s ease-out .78s forwards;
+      text-shadow: 0 2px 18px rgba(0,0,0,.95);
+      letter-spacing:.2px;
+    }
+    .highlight-gold {
+      color: var(--gold-bright); font-weight:900;
+      text-shadow: 0 0 14px rgba(255,215,0,1), 0 0 32px rgba(255,150,0,.6), 0 0 60px rgba(255,100,0,.25);
+    }
+    .highlight-fire {
+      color: #FF9500; font-weight:900;
+      text-shadow: 0 0 14px rgba(255,150,0,.95), 0 0 30px rgba(255,100,0,.55), 0 0 55px rgba(255,58,0,.25);
+    }
+
+    /* ─── CTA WRAPPER ─── */
+    .cta-wrapper {
+      opacity:0;
+      animation: slideUp .9s ease-out 1.12s forwards;
+      width:100%;
+      display:flex; flex-direction:column;
+      align-items:center; gap:12px;
+    }
+
+    /* Outer fire glow ring */
+    .cta-glow-ring {
+      border-radius:60px; padding:3px;
+      background: linear-gradient(135deg,
+        var(--gold-bright) 0%, var(--fire-orange) 38%, var(--fire-hot) 68%, var(--gold-main) 100%);
+      animation: fireFlicker 1.7s ease-in-out infinite;
+      width:100%; max-width:340px;
+      transition: transform .12s ease;
+    }
+    .cta-glow-ring:active { transform: scale(.97); }
+
+    /* Button */
+    .cta-btn {
+      display:flex; align-items:center;
+      justify-content:center; gap:10px;
+      width:100%;
+      padding: 17px 26px;
+      border:none; border-radius:56px;
+      background: linear-gradient(135deg, #FF9500 0%, #FF5500 28%, #E03800 58%, #FF6500 100%);
+      background-size:200% auto;
+      color: var(--white);
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(14px,4.3vw,17px);
+      font-weight:800; letter-spacing:2px;
+      text-decoration:none; text-transform:uppercase;
+      cursor:pointer; -webkit-tap-highlight-color:transparent;
+      user-select:none; position:relative; overflow:hidden;
+      animation: pulseRing 2.1s ease-out infinite;
+      transition: background-position .3s ease, box-shadow .2s ease;
+    }
+    .cta-btn:hover {
+      background-position:right center;
+      box-shadow: 0 8px 38px rgba(255,100,0,.75);
+    }
+    .cta-btn:active { transform:scale(.97); }
+
+    /* Gold shimmer */
+    .cta-btn::before {
+      content:'';
+      position:absolute; top:0; left:0;
+      width:60%; height:100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.24), rgba(255,220,0,.18), transparent);
+      transform: skewX(-20deg) translateX(-160%);
+      animation: shimmerGold 2.4s ease-in-out infinite;
+    }
+
+    .tg-icon {
+      width:20px; height:20px;
+      fill:var(--white); flex-shrink:0;
+      position:relative; z-index:1;
+      filter:drop-shadow(0 1px 3px rgba(0,0,0,.35));
+    }
+    .btn-text { position:relative; z-index:1; }
+
+    /* ─── URGENCY ─── */
+    .urgency-text {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(10.5px,2.8vw,12.5px);
+      font-weight:600; letter-spacing:.4px;
+      text-align:center;
+      animation: urgencyFlash 2.6s ease-in-out infinite;
+    }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar {
+      display:flex; align-items:center; justify-content:center;
+      gap:8px; flex-wrap:wrap;
+      width:100%; max-width:420px;
+      margin-top:14px;
+      opacity:0;
+      animation: fadeUp .8s ease-out 1.38s forwards;
+    }
+    .trust-bar span {
+      font-family:'Poppins',sans-serif;
+      font-size: clamp(9.5px,2.6vw,11.5px);
+      font-weight:700; letter-spacing:.5px;
+      color: rgba(255,210,80,.82);
+      background: linear-gradient(135deg, rgba(22,14,0,.82), rgba(14,8,0,.88));
+      border: 1px solid rgba(255,215,0,.18);
+      border-left: 2.5px solid rgba(255,215,0,.55);
+      border-radius: 20px;
+      padding: 7px 14px;
+      white-space:nowrap;
+      box-shadow: 0 2px 14px rgba(0,0,0,.4);
+    }
+
+    /* ─── TICKER ─── */
+    .ticker-wrap {
+      position:fixed; bottom:0; left:0; right:0; z-index:10;
+      background: linear-gradient(90deg, rgba(15,8,0,.94), rgba(22,12,0,.92));
+      border-top: 1px solid rgba(255,200,0,.28);
+      overflow:hidden; padding:7px 0;
+      backdrop-filter:blur(8px);
+    }
+    .ticker-track {
+      display:flex; width:max-content;
+      animation: tickerSlide 20s linear infinite;
+    }
+    .ticker-item {
+      font-family:'Poppins',sans-serif;
+      font-size:11.5px; font-weight:600;
+      color: rgba(255,200,60,.9);
+      letter-spacing:.5px; white-space:nowrap;
+      padding:0 38px;
+    }
+    .ticker-item::before { content:'🔥 '; }
+
+    /* ─── DESKTOP ─── */
+    @media (min-width:700px) {
+      .hero-section {
+        flex-direction:row; align-items:center;
+        gap:56px; max-width:900px;
+      }
+      .image-frame-outer  { max-width:420px; flex-shrink:0; }
+      .hero-content       { align-items:flex-start; }
+      .headline           { text-align:left; }
+      .cta-wrapper        { align-items:flex-start; }
+      .urgency-text       { text-align:left; }
+      .stats-row          { justify-content:flex-start; }
+      .trust-bar          { justify-content:flex-start; }
+      .come-header        { max-width:900px; }
+      .expert-strip       { max-width:900px; }
+    }
+
+    /* ─── SMALL PHONES ─── */
+    @media (max-width:360px) {
+      .headline       { font-size:19px; }
+      .cta-btn        { padding:14px 18px; font-size:13px; }
+      .cta-glow-ring  { max-width:280px; }
+      .expert-name    { font-size:14px; }
+    }
+
+    /* ─── LARGE PHONES (400–699) ─── */
+    @media (min-width:400px) and (max-width:699px) {
+      .image-frame-outer { max-width:340px; }
+    }
+
+    /* ─── RIPPLE ─── */
+    .ripple {
+      position:absolute; border-radius:50%;
+      background:rgba(255,255,255,.28);
+      transform:scale(0);
+      animation:rippleOut .55s linear;
+      pointer-events:none;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <main class="page-wrapper">
+
+    <!-- ── HEADER ── -->
+    <div class="come-header">
+      <img src="comelogo.png" alt="Come" class="come-logo">
+      <div class="live-badge" role="status">
+        <span class="live-dot" aria-hidden="true"></span>
+        Live Now
+      </div>
+    </div>
+
+    <!-- ── EXPERT STRIP ── -->
+    <div class="expert-strip">
+      <span class="expert-name">Rajiv Choudhry</span>
+      <span class="expert-badge">⭐ IPL Expert</span>
+    </div>
+
+    <section class="hero-section">
+
+      <!-- ── HERO IMAGE ── -->
+      <div class="image-frame-outer">
+        <div class="image-frame-ring">
+          <div class="image-frame-inner">
+            <img
+              src="rajiv-dhoni.jpg"
+              alt="Rajiv Choudhry with MS Dhoni"
+              width="400" height="400"
+              loading="eager"
+              onerror="this.style.display='none';
+                       this.closest('.image-frame-inner').querySelector('.img-fallback').style.display='flex';"
+            >
+            <!-- Name overlay on image -->
+            <div class="img-name-overlay">
+              <div class="iname">Rajiv Choudhry</div>
+              <div class="ititle">Fantasy Cricket Expert · IPL Analyst</div>
+            </div>
+            <div class="img-fallback">🏏</div>
+          </div>
+        </div>
+        <div class="verified-badge">✅ VERIFIED</div>
+      </div>
+
+      <!-- ── TEXT + CTA ── -->
+      <div class="hero-content" style="display:flex;flex-direction:column;align-items:center;gap:18px;width:100%;">
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num" data-target="200000">0</span>
+            <span class="stat-label">Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="98">0</span>
+            <span class="stat-label">% Accuracy</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="3">0</span>
+            <span class="stat-label">Yrs Expert</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="headline">
+          आज होने वाले मैच की<br>
+          <span class="highlight-gold">1st Rank Team</span><br>
+          आपको मिल सकती है<br>
+          जल्दी से <span class="highlight-fire">Telegram Join</span> करो।
+        </h1>
+
+        <!-- CTA -->
+        <div class="cta-wrapper">
+          <div class="cta-glow-ring">
+            <a
+              href="https://t.me/+ix_7H6ll5n8xMzll"
+              id="telegram-btn"
+              class="cta-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join Telegram group"
+            >
+              <svg class="tg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+              <span class="btn-text">JOIN TELEGRAM FREE</span>
+              <svg class="tg-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            </a>
+          </div>
+          <p class="urgency-text">⚡ सीमित समय का ऑफर — अभी Join करो!</p>
+        </div>
+
+      </div><!-- /hero-content -->
+    </section>
+
+    <!-- ── TRUST BAR ── -->
+    <div class="trust-bar">
+      <span>🏆 Daily 1st Rank Team</span>
+      <span>🔒 100% Free</span>
+      <span>📱 Instant Access</span>
+    </div>
+
+  </main>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">आज का मैच शुरू होने वाला है</span>
+      <span class="ticker-item">1st Rank Team सिर्फ Telegram पर</span>
+      <span class="ticker-item">Free Join करो — अभी Limited Seats</span>
+      <span class="ticker-item">Expert Predictions Daily</span>
+      <span class="ticker-item">2 Lakh+ Members Already Joined</span>
+      <span class="ticker-item">आज का मैच शुरू होने वाला है</span>
+      <span class="ticker-item">1st Rank Team सिर्फ Telegram पर</span>
+      <span class="ticker-item">Free Join करो — अभी Limited Seats</span>
+      <span class="ticker-item">Expert Predictions Daily</span>
+      <span class="ticker-item">2 Lakh+ Members Already Joined</span>
+    </div>
+  </div>
+
+  <script>
+    /* ── UUID generator for Meta Pixel CAPI deduplication ── */
+    function generateEventID() {
+      if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID();
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+        var r=Math.random()*16|0, v=c==='x'?r:(r&0x3|0x8);
+        return v.toString(16);
+      });
+    }
+
+    /* ── Cookie reader (for fbp / fbc — Facebook identity cookies) ── */
+    function getCookie(name) {
+      var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+      return m ? m[2] : undefined;
+    }
+
+    /* ── fbc helper: cookie first, then construct from URL fbclid ── */
+    function getFbc() {
+      var cookie = getCookie('_fbc');
+      if (cookie) return cookie;
+      try {
+        var fbclid = new URLSearchParams(window.location.search).get('fbclid');
+        if (fbclid) {
+          var fbc = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+          document.cookie = '_fbc=' + fbc + '; path=/; max-age=' + (90*24*60*60) + '; SameSite=Lax';
+          return fbc;
+        }
+      } catch(e) {}
+      return undefined;
+    }
+
+    /* ── Send event to CAPI serverless function ── */
+    function sendCAPI(eventName, eventID) {
+      try {
+        fetch('/api/capi', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventName:  eventName,
+            eventID:    eventID,
+            fbp:        getCookie('_fbp'),
+            fbc:        getFbc(),
+            sourceUrl:  window.location.href,
+            userAgent:  navigator.userAgent
+          })
+        }).catch(function(){});
+      } catch(e){}
+    }
+
+    /* ── Meta Pixel events (browser) + CAPI (server) ── */
+    window.addEventListener('load', function(){
+      var id = generateEventID();
+      try { sessionStorage.setItem('pv_event_id', id); } catch(e){}
+      if(typeof fbq !== 'undefined') fbq('track','PageView',{},{eventID:id});
+      sendCAPI('PageView', id);
+    });
+
+    var tgBtn = document.getElementById('telegram-btn');
+    if(tgBtn){
+      tgBtn.addEventListener('click', function(e){
+        var id = generateEventID();
+        try { sessionStorage.setItem('lead_event_id', id); } catch(e){}
+        if(typeof fbq !== 'undefined')
+          fbq('track','Subscribe',{content_name:'Telegram Join',content_category:'IPL Prediction',currency:'INR',value:0},{eventID:id});
+        sendCAPI('Subscribe', id);
+      });
+    }
+
+    /* ── Ripple on button click ── */
+    if(tgBtn){
+      tgBtn.addEventListener('click', function(e){
+        var r = document.createElement('span');
+        r.classList.add('ripple');
+        var rect = tgBtn.getBoundingClientRect();
+        var size = Math.max(rect.width, rect.height);
+        r.style.width = r.style.height = size + 'px';
+        r.style.left = (e.clientX - rect.left - size/2) + 'px';
+        r.style.top  = (e.clientY - rect.top  - size/2) + 'px';
+        tgBtn.appendChild(r);
+        setTimeout(function(){ r.remove(); }, 600);
+      });
+    }
+
+    /* ── Stat counter ── */
+    function formatStat(n, target) {
+      if (target >= 100000) return Math.round(n / 100000 * 10) / 10 + 'L+';
+      if (target >= 1000)   return Math.round(n / 1000) + 'K+';
+      return Math.round(n) + (target === 98 ? '%' : '+');
+    }
+    function countUp() {
+      var els = document.querySelectorAll('.stat-num');
+      els.forEach(function(el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var duration = 1400, start = performance.now();
+        function step(now) {
+          var progress = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = formatStat(target * eased, target);
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = formatStat(target, target);
+            el.classList.add('counted');
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+    setTimeout(countUp, 1000);
+
+    /* ── Canvas Particle System ── */
+    (function(){
+      var canvas = document.getElementById('particle-canvas');
+      var ctx    = canvas.getContext('2d');
+      var W, H;
+
+      var COLORS = ['#FFD700','#FF6B00','#F5A623','#00E676','#FFB800','#FF3A00'];
+      var pts = [], COUNT = 30;
+
+      function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+
+      function Particle(spread){ this.reset(spread === true); }
+      Particle.prototype.reset = function(spread){
+        this.x  = Math.random() * W;
+        this.y  = spread ? Math.random() * H : H + 4;
+        this.r  = Math.random() * 2.1 + 0.4;
+        this.vx = (Math.random()-.5) * .42;
+        this.vy = -(Math.random() * .65 + .2);
+        this.c  = COLORS[Math.floor(Math.random()*COLORS.length)];
+        this.maxL = Math.floor(Math.random()*170 + 90);
+        this.life = spread ? Math.floor(Math.random()*this.maxL) : this.maxL;
+        this.tw = Math.random()*.05+.018;
+        this.to = Math.random()*Math.PI*2;
+      };
+      Particle.prototype.update = function(){
+        this.x += this.vx; this.y += this.vy; this.life--;
+        if(this.life<=0 || this.y<-8) this.reset(false);
+      };
+      Particle.prototype.draw = function(f){
+        var a = (this.life/this.maxL)*.78*(.55+.45*Math.sin(f*this.tw+this.to));
+        if(a<=0) return;
+        ctx.save();
+        ctx.globalAlpha = a;
+        ctx.fillStyle = this.c;
+        ctx.shadowBlur = 8; ctx.shadowColor = this.c;
+        ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2); ctx.fill();
+        ctx.restore();
+      };
+
+      resize();
+      for(var i=0;i<COUNT;i++) pts.push(new Particle(true));
+
+      var f=0, timer;
+      function loop(){
+        ctx.clearRect(0,0,W,H); f++;
+        for(var i=0;i<pts.length;i++){ pts[i].update(); pts[i].draw(f); }
+        requestAnimationFrame(loop);
+      }
+      loop();
+
+      window.addEventListener('resize',function(){
+        clearTimeout(timer); timer = setTimeout(resize,100);
+      });
+    })();
+  </script>
+
+</body>
+</html>

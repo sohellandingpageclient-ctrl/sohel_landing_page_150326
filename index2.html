@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="facebook-domain-verification" content="ylul76wv15vu6qhm8ns33sz6xm7lnv" />
+  <title>IPL 2025 - आज की Best Team | Telegram Join करो</title>
+  <meta property="og:title" content="IPL 2025 - आज की 1st Rank Team पाओ">
+  <meta property="og:description" content="आज होने वाले मैच की 1st Rank Team Telegram पर मिलेगी। अभी Join करो!">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- META PIXEL -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','875692978767360');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=875692978767360&ev=PageView&noscript=1"/></noscript>
+
+  <style>
+    /* ─── RESET ─── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+
+    /* ─── BODY ─── */
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Noto Sans Devanagari','Poppins',sans-serif;
+      color: #fff;
+      background: #07040F;
+    }
+
+    /* ─── ANIMATED BACKGROUND ORBS ─── */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(55px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb-1 {
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(255,60,130,0.28) 0%, transparent 70%);
+      top: -120px; left: -100px;
+      animation: orbFloat 9s ease-in-out infinite;
+    }
+    .orb-2 {
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, rgba(0,210,200,0.22) 0%, transparent 70%);
+      bottom: -80px; right: -80px;
+      animation: orbFloat 11s ease-in-out infinite reverse;
+    }
+    .orb-3 {
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(130,0,255,0.18) 0%, transparent 70%);
+      top: 42%; left: 35%;
+      animation: orbFloat 14s ease-in-out infinite 4s;
+    }
+    @keyframes orbFloat {
+      0%,100% { transform: translate(0,0) scale(1); }
+      33%      { transform: translate(18px,-22px) scale(1.04); }
+      66%      { transform: translate(-14px,16px) scale(.97); }
+    }
+
+    /* ─── PARTICLE CANVAS ─── */
+    #particle-canvas {
+      position: fixed; inset: 0;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* ─── PAGE WRAPPER ─── */
+    .page-wrapper {
+      position: relative; z-index: 2;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center;
+      padding: 16px 18px 72px;
+      opacity: 0;
+      animation: fadeInPage 0.7s ease-out 0.1s forwards;
+    }
+    @keyframes fadeInPage { to { opacity:1; } }
+
+    /* ─── KEYFRAMES ─── */
+    @keyframes slideUp   { from{opacity:0;transform:translateY(32px);} to{opacity:1;transform:translateY(0);} }
+    @keyframes fadeDown  { from{opacity:0;transform:translateY(-18px);} to{opacity:1;transform:translateY(0);} }
+    @keyframes blink     { 0%,100%{opacity:1;box-shadow:0 0 9px #f00,0 0 18px rgba(255,0,0,.4);} 50%{opacity:.1;box-shadow:none;} }
+    @keyframes tickerSlide { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+    @keyframes rippleOut   { to{transform:scale(4);opacity:0;} }
+
+    /* Rotating ring for image */
+    @property --rot {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    @keyframes spinRing { to { --rot: 360deg; } }
+
+    /* Image outer glow breathe */
+    @keyframes roseBreathe {
+      0%,100% { box-shadow: 0 0 28px rgba(255,60,130,.5), 0 0 60px rgba(0,210,200,.18); }
+      50%      { box-shadow: 0 0 48px rgba(255,60,130,.85), 0 0 90px rgba(0,210,200,.32); }
+    }
+
+    /* CTA glow pulse */
+    @keyframes ctaPulse {
+      0%,100% { box-shadow: 0 0 18px rgba(200,0,255,.45), 0 0 44px rgba(255,60,130,.2); }
+      50%      { box-shadow: 0 0 32px rgba(200,0,255,.8),  0 0 70px rgba(255,60,130,.4); }
+    }
+
+    /* Button shimmer */
+    @keyframes shimmer {
+      0%   { background-position: -200% center; }
+      100% { background-position:  200% center; }
+    }
+
+    /* Urgency pulse */
+    @keyframes urgencyPulse { 0%,100%{opacity:.6;} 50%{opacity:1;} }
+
+    /* Match badge bounce */
+    @keyframes badgePop {
+      0%   { transform: scale(0.7); opacity:0; }
+      60%  { transform: scale(1.08); opacity:1; }
+      100% { transform: scale(1); }
+    }
+
+    /* Stat count glow */
+    @keyframes statPop {
+      0%  { transform: scale(1); }
+      50% { transform: scale(1.12); text-shadow: 0 0 18px rgba(0,210,200,.9); }
+      100%{ transform: scale(1); text-shadow: 0 0 8px rgba(0,210,200,.4); }
+    }
+
+    /* Gradient text shimmer */
+    @keyframes gradientShift {
+      0%,100% { background-position: 0% center; }
+      50%      { background-position: 100% center; }
+    }
+
+    /* Glass card float */
+    @keyframes cardFloat {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-6px); }
+    }
+
+    /* ─── HEADER ─── */
+    .header {
+      width: 100%; max-width: 400px;
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 18px;
+      opacity: 0;
+      animation: fadeDown .6s ease-out .2s forwards;
+    }
+    .come-logo {
+      height: 40px; width: auto;
+      filter: drop-shadow(0 0 12px rgba(255,60,130,.4)) drop-shadow(0 2px 8px rgba(0,0,0,.7));
+    }
+
+    /* Live badge — glass style */
+    .live-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 30px;
+      padding: 6px 16px;
+      font-family: 'Poppins',sans-serif;
+      font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
+      color: rgba(255,255,255,.85);
+      text-transform: uppercase;
+    }
+    .live-dot {
+      width: 8px; height: 8px;
+      background: #FF2020; border-radius: 50%; flex-shrink: 0;
+      animation: blink 1.1s ease-in-out infinite;
+    }
+
+    /* ─── MATCH DAY BANNER ─── */
+    .match-banner {
+      display: flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg,
+        rgba(255,60,130,0.15) 0%,
+        rgba(130,0,255,0.12) 50%,
+        rgba(0,210,200,0.12) 100%);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 14px;
+      padding: 8px 20px;
+      margin-bottom: 20px;
+      width: 100%; max-width: 400px;
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      animation: badgePop .5s cubic-bezier(.34,1.56,.64,1) .35s forwards;
+    }
+    .match-dot {
+      width: 8px; height: 8px; flex-shrink: 0;
+      border-radius: 50%;
+      background: #00D2C8;
+      box-shadow: 0 0 10px #00D2C8;
+      animation: blink 1.4s ease-in-out infinite;
+    }
+    .match-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11.5px; font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #FF3C82, #BF00FF, #00D2C8);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 3s ease-in-out infinite;
+    }
+
+    /* ─── HERO GLASS CARD ─── */
+    .hero-card {
+      width: 100%; max-width: 360px;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 28px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: slideUp .8s ease-out .5s forwards;
+      box-shadow:
+        0 8px 50px rgba(0,0,0,.55),
+        0 0 0 1px rgba(255,60,130,.08),
+        inset 0 1px 0 rgba(255,255,255,.08);
+    }
+
+    /* ─── FULL CARD PHOTO ─── */
+    .card-photo-wrap {
+      position: relative;
+      width: 100%;
+      height: 260px;
+    }
+    .card-photo-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    /* Gradient overlay — fades image into card at bottom */
+    .card-photo-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 60px 18px 16px;
+      background: linear-gradient(to top,
+        rgba(7,4,15,1) 0%,
+        rgba(7,4,15,0.75) 45%,
+        transparent 100%);
+      display: flex; flex-direction: column; gap: 3px;
+    }
+    .card-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(17px, 4.8vw, 21px);
+      font-weight: 800;
+      letter-spacing: .3px;
+      background: linear-gradient(90deg, #FF3C82, #BF00FF, #00D2C8);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 4s ease-in-out infinite;
+    }
+    .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,.55);
+      text-transform: uppercase;
+    }
+    /* Verified badge — top right corner of image */
+    .card-verified {
+      position: absolute;
+      top: 12px; right: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 9.5px; font-weight: 800;
+      letter-spacing: 1.2px;
+      color: #07040F;
+      background: linear-gradient(135deg, #FF3C82 0%, #BF00FF 100%);
+      border-radius: 20px;
+      padding: 5px 11px;
+      text-transform: uppercase;
+      box-shadow: 0 3px 14px rgba(255,60,130,.5);
+    }
+
+    /* ─── HEADLINE ─── */
+    .headline {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: clamp(21px, 5.8vw, 30px);
+      font-weight: 700;
+      line-height: 1.7;
+      text-align: center;
+      color: #F0F0FF;
+      opacity: 0;
+      animation: slideUp .9s ease-out .75s forwards;
+      text-shadow: 0 2px 18px rgba(0,0,0,.9);
+      width: 100%; max-width: 400px;
+    }
+    .hl-rose {
+      font-weight: 900;
+      background: linear-gradient(90deg, #FF3C82, #FF7BAC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 8px rgba(255,60,130,.6));
+    }
+    .hl-teal {
+      font-weight: 900;
+      background: linear-gradient(90deg, #00D2C8, #00F0E0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 8px rgba(0,210,200,.6));
+    }
+
+    /* ─── STATS GLASS STRIP ─── */
+    .stats-strip {
+      width: 100%; max-width: 400px;
+      display: flex;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 18px;
+      overflow: hidden;
+      opacity: 0;
+      animation: slideUp .8s ease-out .9s forwards;
+      box-shadow: 0 4px 24px rgba(0,0,0,.35);
+    }
+    .stat-cell {
+      flex: 1;
+      display: flex; flex-direction: column; align-items: center;
+      padding: 12px 6px;
+      position: relative;
+    }
+    .stat-cell + .stat-cell::before {
+      content: '';
+      position: absolute; left: 0; top: 20%; height: 60%;
+      width: 1px;
+      background: rgba(255,255,255,.1);
+    }
+    .stat-val {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(17px, 4.5vw, 22px);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+    }
+    .stat-val.rose  { color: #FF3C82; text-shadow: 0 0 14px rgba(255,60,130,.5); }
+    .stat-val.teal  { color: #00D2C8; text-shadow: 0 0 14px rgba(0,210,200,.5); }
+    .stat-val.purple{ color: #BF44FF; text-shadow: 0 0 14px rgba(191,0,255,.5); }
+    .stat-val.popped { animation: statPop .5s ease-out forwards; }
+    .stat-lbl {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(8px, 2vw, 10px);
+      font-weight: 600;
+      letter-spacing: .8px;
+      color: rgba(255,255,255,.4);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ─── CTA WRAPPER ─── */
+    .cta-wrapper {
+      width: 100%; max-width: 400px;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      opacity: 0;
+      animation: slideUp .9s ease-out 1.1s forwards;
+    }
+
+    /* CTA Button */
+    .cta-btn {
+      display: flex; align-items: center; justify-content: center; gap: 11px;
+      width: 100%;
+      padding: 17px 28px;
+      border: none; border-radius: 60px;
+      background: linear-gradient(135deg,
+        #FF3C82 0%, #BF00FF 45%, #7700CC 70%, #00D2C8 100%);
+      background-size: 200% auto;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(13.5px, 4.1vw, 17px);
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      position: relative;
+      overflow: hidden;
+      animation: ctaPulse 2.4s ease-in-out infinite;
+      transition: background-position .35s ease;
+    }
+    .cta-btn:hover { background-position: right center; }
+    .cta-btn:active { transform: scale(.97); }
+
+    /* Shimmer sweep */
+    .cta-btn::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 55%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+      transform: skewX(-20deg) translateX(-160%);
+      animation: shimmer 2.6s ease-in-out infinite;
+    }
+
+    .tg-icon {
+      width: 20px; height: 20px;
+      fill: #fff; flex-shrink: 0;
+      position: relative; z-index: 1;
+      filter: drop-shadow(0 1px 3px rgba(0,0,0,.4));
+    }
+    .btn-txt { position: relative; z-index: 1; }
+
+    /* Urgency */
+    .urgency {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(10px, 2.7vw, 12px);
+      font-weight: 600;
+      letter-spacing: .4px;
+      text-align: center;
+      color: rgba(255,200,80,.85);
+      animation: urgencyPulse 2.6s ease-in-out infinite;
+    }
+
+    /* ─── FEATURE PILLS ─── */
+    .pills {
+      display: flex; align-items: center; justify-content: center;
+      flex-wrap: wrap; gap: 8px;
+      width: 100%; max-width: 400px;
+      opacity: 0;
+      animation: slideUp .7s ease-out 1.35s forwards;
+    }
+    .pill {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(9.5px, 2.5vw, 11px);
+      font-weight: 700;
+      letter-spacing: .6px;
+      color: rgba(255,255,255,.75);
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 30px;
+      padding: 7px 16px;
+      white-space: nowrap;
+    }
+    .pill.rose   { border-color: rgba(255,60,130,.3);  color: rgba(255,150,185,.9); }
+    .pill.teal   { border-color: rgba(0,210,200,.3);   color: rgba(0,220,210,.9); }
+    .pill.purple { border-color: rgba(191,0,255,.3);   color: rgba(210,100,255,.9); }
+
+    /* ─── SCROLLING TICKER ─── */
+    .ticker-wrap {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+      background: rgba(7,4,15,0.88);
+      border-top: 1px solid rgba(255,60,130,.2);
+      overflow: hidden;
+      padding: 7px 0;
+      backdrop-filter: blur(12px);
+    }
+    .ticker-track {
+      display: flex; width: max-content;
+      animation: tickerSlide 22s linear infinite;
+    }
+    .ticker-item {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .5px;
+      white-space: nowrap;
+      padding: 0 36px;
+      background: linear-gradient(90deg, #FF3C82, #BF00FF, #00D2C8);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientShift 5s ease-in-out infinite;
+    }
+    .ticker-item::before { content: '✦ '; }
+
+    /* ─── DESKTOP ─── */
+    @media (min-width:700px) {
+      .hero-section-wrap {
+        display: flex; flex-direction: row;
+        align-items: center; gap: 52px;
+        width: 100%; max-width: 900px;
+      }
+      .hero-card { margin-bottom: 0; flex-shrink: 0; opacity: 1; animation: cardFloat 5s ease-in-out infinite; }
+      .right-col { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; flex: 1; }
+      .headline  { text-align: left; }
+      .stats-strip { max-width: 100%; }
+      .cta-wrapper { align-items: flex-start; }
+      .pills { justify-content: flex-start; }
+      .match-banner { max-width: 900px; }
+    }
+
+    /* ─── SMALL PHONES ─── */
+    @media (max-width:360px) {
+      .headline    { font-size: 19px; }
+      .cta-btn     { padding: 15px 20px; font-size: 13px; }
+      .img-ring-wrap { width: 160px; height: 160px; }
+    }
+
+    /* ─── RIPPLE ─── */
+    .ripple {
+      position: absolute; border-radius: 50%;
+      background: rgba(255,255,255,.25);
+      transform: scale(0);
+      animation: rippleOut .55s linear;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <main class="page-wrapper">
+
+    <!-- ── HEADER ── -->
+    <div class="header">
+      <img src="comelogo.png" alt="Come" class="come-logo">
+      <div class="live-badge" role="status">
+        <span class="live-dot" aria-hidden="true"></span>
+        Live Now
+      </div>
+    </div>
+
+    <!-- ── MATCH DAY BANNER ── -->
+    <div class="match-banner">
+      <span class="match-dot" aria-hidden="true"></span>
+      <span class="match-text">🏏 &nbsp;Today's Match — 1st Rank Team Available</span>
+    </div>
+
+    <!-- Desktop wrapper -->
+    <div class="hero-section-wrap">
+
+      <!-- ── GLASS HERO CARD ── -->
+      <div class="hero-card">
+        <div class="card-photo-wrap">
+          <img
+            src="rajiv-dhoni.jpg"
+            alt="Rajiv Choudhry with MS Dhoni"
+            loading="eager"
+          >
+          <div class="card-photo-overlay">
+            <div class="card-name">Rajiv Choudhry</div>
+            <div class="card-title">Fantasy Cricket Expert · IPL Analyst</div>
+          </div>
+          <div class="card-verified">✅ Verified Expert</div>
+        </div>
+      </div>
+
+      <!-- ── RIGHT COLUMN ── -->
+      <div class="right-col" style="display:flex;flex-direction:column;align-items:center;gap:18px;width:100%;">
+
+        <!-- Headline -->
+        <h1 class="headline">
+          आज होने वाले मैच की<br>
+          <span class="hl-rose">1st Rank Team</span><br>
+          आपको मिल सकती है<br>
+          जल्दी से <span class="hl-teal">Telegram Join</span> करो।
+        </h1>
+
+        <!-- Stats Strip -->
+        <div class="stats-strip">
+          <div class="stat-cell">
+            <span class="stat-val rose" data-target="200000" data-color="rose">0</span>
+            <span class="stat-lbl">Members</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-val teal" data-target="98" data-color="teal">0</span>
+            <span class="stat-lbl">% Accuracy</span>
+          </div>
+          <div class="stat-cell">
+            <span class="stat-val purple" data-target="3" data-color="purple">0</span>
+            <span class="stat-lbl">Yrs Expert</span>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-wrapper">
+          <a
+            href="https://t.me/+ix_7H6ll5n8xMzll"
+            id="telegram-btn"
+            class="cta-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Join Telegram group"
+          >
+            <svg class="tg-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+            <span class="btn-txt">JOIN TELEGRAM FREE</span>
+            <svg class="tg-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </a>
+          <p class="urgency">⚡ सीमित समय का ऑफर — अभी Join करो!</p>
+        </div>
+
+        <!-- Pills -->
+        <div class="pills">
+          <span class="pill rose">🏆 Daily 1st Rank</span>
+          <span class="pill teal">🔒 100% Free</span>
+          <span class="pill purple">📱 Instant Access</span>
+        </div>
+
+      </div><!-- /right-col -->
+    </div><!-- /hero-section-wrap -->
+
+  </main>
+
+  <!-- ── SCROLLING TICKER ── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">आज का मैच शुरू होने वाला है</span>
+      <span class="ticker-item">1st Rank Team सिर्फ Telegram पर</span>
+      <span class="ticker-item">Free Join करो — अभी Limited Seats</span>
+      <span class="ticker-item">Expert Predictions Daily</span>
+      <span class="ticker-item">2 Lakh+ Members Already Joined</span>
+      <span class="ticker-item">आज का मैच शुरू होने वाला है</span>
+      <span class="ticker-item">1st Rank Team सिर्फ Telegram पर</span>
+      <span class="ticker-item">Free Join करो — अभी Limited Seats</span>
+      <span class="ticker-item">Expert Predictions Daily</span>
+      <span class="ticker-item">2 Lakh+ Members Already Joined</span>
+    </div>
+  </div>
+
+  <script>
+    /* ── UUID generator for Meta Pixel CAPI deduplication ── */
+    function generateEventID() {
+      if (typeof crypto !== 'undefined' && crypto.randomUUID) return crypto.randomUUID();
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+        var r=Math.random()*16|0, v=c==='x'?r:(r&0x3|0x8);
+        return v.toString(16);
+      });
+    }
+
+    /* ── Cookie reader (for fbp / fbc — Facebook identity cookies) ── */
+    function getCookie(name) {
+      var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+      return m ? m[2] : undefined;
+    }
+
+    /* ── fbc helper: cookie first, then construct from URL fbclid ── */
+    function getFbc() {
+      var cookie = getCookie('_fbc');
+      if (cookie) return cookie;
+      try {
+        var fbclid = new URLSearchParams(window.location.search).get('fbclid');
+        if (fbclid) {
+          var fbc = 'fb.1.' + Math.floor(Date.now() / 1000) + '.' + fbclid;
+          document.cookie = '_fbc=' + fbc + '; path=/; max-age=' + (90*24*60*60) + '; SameSite=Lax';
+          return fbc;
+        }
+      } catch(e) {}
+      return undefined;
+    }
+
+    /* ── Send event to CAPI serverless function ── */
+    function sendCAPI(eventName, eventID) {
+      try {
+        fetch('/api/capi', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventName:  eventName,
+            eventID:    eventID,
+            fbp:        getCookie('_fbp'),
+            fbc:        getFbc(),
+            sourceUrl:  window.location.href,
+            userAgent:  navigator.userAgent
+          })
+        }).catch(function(){});
+      } catch(e){}
+    }
+
+    /* ── Meta Pixel events (browser) + CAPI (server) ── */
+    window.addEventListener('load', function(){
+      var id = generateEventID();
+      try { sessionStorage.setItem('pv_event_id', id); } catch(e){}
+      if(typeof fbq !== 'undefined') fbq('track','PageView',{},{eventID:id});
+      sendCAPI('PageView', id);
+    });
+
+    var tgBtn = document.getElementById('telegram-btn');
+    if(tgBtn){
+      tgBtn.addEventListener('click', function(e){
+        var id = generateEventID();
+        try { sessionStorage.setItem('lead_event_id', id); } catch(e){}
+        if(typeof fbq !== 'undefined')
+          fbq('track','Subscribe',{content_name:'Telegram Join',content_category:'IPL Prediction',currency:'INR',value:0},{eventID:id});
+        sendCAPI('Subscribe', id);
+      });
+    }
+
+    /* ── Ripple on button click ── */
+    if(tgBtn){
+      tgBtn.addEventListener('click', function(e){
+        var r = document.createElement('span');
+        r.classList.add('ripple');
+        var rect = tgBtn.getBoundingClientRect();
+        var size = Math.max(rect.width, rect.height);
+        r.style.width = r.style.height = size + 'px';
+        r.style.left = (e.clientX - rect.left - size/2) + 'px';
+        r.style.top  = (e.clientY - rect.top  - size/2) + 'px';
+        tgBtn.appendChild(r);
+        setTimeout(function(){ r.remove(); }, 600);
+      });
+    }
+
+    /* ── Stat counter ── */
+    function formatStat(n, target) {
+      if (target >= 100000) return (Math.round(n / 10000) / 10).toFixed(1) + 'L+';
+      if (target >= 1000)   return Math.round(n / 1000) + 'K+';
+      return Math.round(n) + (target === 98 ? '%' : '+');
+    }
+    function countUp() {
+      document.querySelectorAll('.stat-val[data-target]').forEach(function(el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var duration = 1500, start = performance.now();
+        function step(now) {
+          var p = Math.min((now - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = formatStat(target * eased, target);
+          if (p < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = formatStat(target, target);
+            el.classList.add('popped');
+          }
+        }
+        requestAnimationFrame(step);
+      });
+    }
+    setTimeout(countUp, 900);
+
+    /* ── Canvas Particle System ── */
+    (function(){
+      var canvas = document.getElementById('particle-canvas');
+      var ctx    = canvas.getContext('2d');
+      var W, H;
+
+      var COLORS = ['#FF3C82','#BF00FF','#00D2C8','#FF80B0','#9933FF','#00F0E0'];
+      var pts = [], COUNT = 30;
+
+      function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+
+      function Particle(spread){ this.reset(spread === true); }
+      Particle.prototype.reset = function(spread){
+        this.x  = Math.random() * W;
+        this.y  = spread ? Math.random() * H : H + 4;
+        this.r  = Math.random() * 2.1 + 0.4;
+        this.vx = (Math.random()-.5) * .42;
+        this.vy = -(Math.random() * .65 + .2);
+        this.c  = COLORS[Math.floor(Math.random()*COLORS.length)];
+        this.maxL = Math.floor(Math.random()*170 + 90);
+        this.life = spread ? Math.floor(Math.random()*this.maxL) : this.maxL;
+        this.tw = Math.random()*.05+.018;
+        this.to = Math.random()*Math.PI*2;
+      };
+      Particle.prototype.update = function(){
+        this.x += this.vx; this.y += this.vy; this.life--;
+        if(this.life<=0 || this.y<-8) this.reset(false);
+      };
+      Particle.prototype.draw = function(f){
+        var a = (this.life/this.maxL)*.78*(.55+.45*Math.sin(f*this.tw+this.to));
+        if(a<=0) return;
+        ctx.save();
+        ctx.globalAlpha = a;
+        ctx.fillStyle = this.c;
+        ctx.shadowBlur = 8; ctx.shadowColor = this.c;
+        ctx.beginPath(); ctx.arc(this.x,this.y,this.r,0,Math.PI*2); ctx.fill();
+        ctx.restore();
+      };
+
+      resize();
+      for(var i=0;i<COUNT;i++) pts.push(new Particle(true));
+
+      var f=0, timer;
+      function loop(){
+        ctx.clearRect(0,0,W,H); f++;
+        for(var i=0;i<pts.length;i++){ pts[i].update(); pts[i].draw(f); }
+        requestAnimationFrame(loop);
+      }
+      loop();
+
+      window.addEventListener('resize',function(){
+        clearTimeout(timer); timer = setTimeout(resize,100);
+      });
+    })();
+  </script>
+
+</body>
+</html>
